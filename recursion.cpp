@@ -53,6 +53,28 @@ using namespace std;
 // Treec(n-1);
 // }
 
+
+//Indirect Recursion
+// void indRecB(int n);
+// void indRecA(int n){
+// if(n>=0)
+// {
+//     std::cout << n<<" " ;
+//     indRecB(n-1);
+// }
+
+// }
+// void indRecB(int n){
+// if(n>0)
+// {
+//     std::cout << n <<" ";
+//     indRecA(n/2);
+// }
+
+// }
+
+
+//Nested Recrusion
 int main()
 {
 
