@@ -1,7 +1,6 @@
 #include <iostream>
 using namespace std;
 
-
 // //Printing in ascending
 // int rec(int n)
 // {
@@ -27,13 +26,13 @@ using namespace std;
 //     rec2(n - 1);
 // }
 
-//static variables in function
+// static variables in function
 
 // int staticRec(int n){
 
 // if (n>0)
 // {
-    
+
 //     int a=staticRec(n-1)+n;
 //     std::cout << a << std::endl;
 //     return a;
@@ -42,26 +41,24 @@ using namespace std;
 
 // }
 
+// tree recursion
+//  int Treec(int n){
+//      if(n==0){
+//          return 0;
+//      }
+//      cout << n<<" " ;
+//  Treec(n-1);
+//  Treec(n-1);
+//  }
 
-//tree recursion
-// int Treec(int n){
-//     if(n==0){
-//         return 0;
-//     }
-//     cout << n<<" " ;
-// Treec(n-1);
-// Treec(n-1);
-// }
-
-
-//Indirect Recursion
-// void indRecB(int n);
-// void indRecA(int n){
-// if(n>=0)
-// {
-//     std::cout << n<<" " ;
-//     indRecB(n-1);
-// }
+// Indirect Recursion
+//  void indRecB(int n);
+//  void indRecA(int n){
+//  if(n>=0)
+//  {
+//      std::cout << n<<" " ;
+//      indRecB(n-1);
+//  }
 
 // }
 // void indRecB(int n){
@@ -73,11 +70,23 @@ using namespace std;
 
 // }
 
+// Nested Recrusion
+int nestedRec(int n)
+{
+    if (n > 100)
+    {
+        return n - 10;
+    }
+    else
+    {
+        nestedRec(nestedRec(n + 11));
+    }
+}
 
-//Nested Recrusion
 int main()
 {
+    int a = nestedRec(90);
+    std::cout << a << std::endl;
 
-   
     return 0;
 }
