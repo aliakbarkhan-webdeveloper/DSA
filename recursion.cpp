@@ -29,21 +29,33 @@ using namespace std;
 
 //static variables in function
 
-int staticRec(int n){
+// int staticRec(int n){
 
-if (n>0)
-{
+// if (n>0)
+// {
     
-    int a=staticRec(n-1)+n;
-    std::cout << a << std::endl;
-    return a;
-}
-return 0;
+//     int a=staticRec(n-1)+n;
+//     std::cout << a << std::endl;
+//     return a;
+// }
+// return 0;
 
-}
+// }
+
+
+//tree recursion
+// int Treec(int n){
+//     if(n==0){
+//         return 0;
+//     }
+//     cout << n<<" " ;
+// Treec(n-1);
+// Treec(n-1);
+// }
+
 int main()
 {
- printf("%d",staticRec(5));
+
    
     return 0;
 }
