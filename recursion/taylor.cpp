@@ -4,9 +4,9 @@ using namespace  std;
 
 //calculation of taylor series--> we will use static valriables to solve taylor series
 
-// int ty(int x, int n){
-//     static int P=1, F=1;
-//     int r;
+// double ty(double x, double n){
+//     static double P=1, F=1;
+//     double r;
 //     if(n==0){
 //         return 1;
 //     }else{
@@ -18,10 +18,12 @@ using namespace  std;
 // }
 
 
+
+
 int main()
 {
    
-cout<<ty(2,4);
+cout<<ty(1,10);
 
 
     return 0;
