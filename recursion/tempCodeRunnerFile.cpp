@@ -1,8 +1,11 @@
-int rec(int n){
-    if (n<=1)
-    {
-        return n;
-    }
-    
-    return rec(n-2)+rec(n-1);
-}
+int ncr(int n, int r)
+// {
+//     if (r == 0 || n == r)
+//     {
+//         return 1;
+//     }
+//     else
+//     {
+//         return ncr(n - 1, r - 1) + ncr(n - 1, r);
+//     }
+// }
