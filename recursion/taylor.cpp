@@ -41,7 +41,6 @@ double ty(double x, double n)
         num *= x;
         den *= i;
         S += num / den;
-
     }
     return S;
 }
