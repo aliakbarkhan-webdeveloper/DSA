@@ -8,7 +8,7 @@ void remove(int idx)
 
     for (int i = idx; i < sizeof(arr); i++)
     {
-        arr[idx] = arr[idx + 1];
+        arr[i] = arr[i + 1];
     }
     arr[sizeof(arr) - 1] = -1;
 }
