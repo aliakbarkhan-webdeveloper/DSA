@@ -10,7 +10,7 @@ void remove(int idx)
     {
         arr[i] = arr[i + 1];
     }
-    arr[sizeof(arr) - 1] = -1;
+    arr[sizeof(arr)-1]=-1;
 }
 int main(int argc, char const *argv[])
 {
