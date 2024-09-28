@@ -19,6 +19,7 @@ bool find(int key)
 
 int main(int argc, char const *argv[])
 {
+    
 
     cout << find(1);
     return 0;
