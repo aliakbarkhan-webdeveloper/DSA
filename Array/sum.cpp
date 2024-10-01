@@ -1,6 +1,8 @@
 #include <iostream>
 using namespace std;
 
+// Sum of all elements of array
+
 int sum(int arr[], int n)
 {
 
