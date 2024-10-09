@@ -1,32 +1,61 @@
 #include <iostream>
 using namespace std;
 
-int arr[6] = {1, 2, 3, 4, 5, 7};
+int arr[6] = {1, 2, 3, 4, 5, 6};
 
 int n = 6;
 void miss()
 {
-    int sum = 0;
+    int h = arr[n - 1];
+    int l = arr[0];
+    int diff = l - 0;
+
     for (int i = 0; i < n; i++)
     {
-        sum = sum + arr[i];
+        if (arr[i] - i != diff)
+        {
+            cout << "missing element is " << i + diff;
+            break;
+        }
     }
-    cout << sum << "\n";
-    int s = (n * (n + 1)) / 2;
-    cout << s << "\n";
-    int result = s - sum;
-    cout << "missing element is " << result;
 }
 
-
-void unsortMiss(){
+int sorting()
+{
     
+}
+void unsortMiss()
+{
+}
+
+bool sorted()
+{
+    for (int i = 0; i < n - 1; i++)
+    {
+        if (arr[i] > arr[i + 1])
+        {
+            return false;
+        }
+    }
+    return true;
+}
+
+void findMiss()
+{
+    if (sorted())
+    {
+        miss();
+    }
+    else
+    {
+        unsortMiss();
+    }
 }
 
 int main()
 {
 
-    miss();
+    findMiss();
 
     return 0;
 }
