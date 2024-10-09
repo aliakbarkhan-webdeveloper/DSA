@@ -68,7 +68,7 @@ void findMiss()
 }
 
 int main()
-{
+{//O(n)
     findMiss();
     return 0;
 }
