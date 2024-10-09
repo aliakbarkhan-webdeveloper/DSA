@@ -6,7 +6,7 @@ int arr[6] = {1, 2, 3, 4, 7, 6};
 int n = 6;
 void miss()
 {
-    int h = arr[n - 1];
+
     int l = arr[0];
     int diff = l - 0;
 
