@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-int arr[6] = {1, 2, 3, 4, 5, 6};
+int arr[6] = {1, 2, 3, 4, 7, 6};
 
 int n = 6;
 void miss()
@@ -32,6 +32,8 @@ void sorting()
 }
 void unsortMiss()
 {
+    sorting();
+    miss();
 }
 
 bool sorted()
