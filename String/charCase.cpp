@@ -10,17 +10,19 @@ void changeCase(char str[])
         {
             str[i] += 32;
         }
-        else
+        else if (str[i] >= 'a' && str[i] <= 122)
         {
             str[i] -= 32;
         }
+        i++;
     }
 
     for (size_t j = 0; j != '\0'; j++)
     {
-        cout << str[i];
+        std::cout << str[i];
     }
 }
+
 int main()
 {
     char str[] = {'a', 'L', 'i', '\0'};
