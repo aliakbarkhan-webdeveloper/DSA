@@ -1,9 +1,7 @@
 #include <iostream>
 using namespace std;
-
 int arr[8] = {3, 4, 3, 10, 1, 9, 12, 2};
 int n = 8;
-
 void findDuplicate() // O(n^2)
 {
 
@@ -23,11 +21,8 @@ void findDuplicate() // O(n^2)
     }
     cout << "The number " << dulplicateValue << " is repeated " << count << " times";
 }
-
 int main()
 {
-
     findDuplicate();
-
     return 0;
 }

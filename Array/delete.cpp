@@ -14,7 +14,6 @@ void remove(int idx)
 }
 int main(int argc, char const *argv[])
 {
-
     remove(2);
     cout << arr[2];
     return 0;
